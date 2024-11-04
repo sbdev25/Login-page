@@ -1,0 +1,403 @@
+*{
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--last_color--);
+}
+:root{
+    --first_color--:rgb(44, 44, 44);
+    --second_color--:rgb(32, 209, 194);
+    --last_color--:rgb(224, 239, 234);
+}
+/* header zero */
+    .header{
+        width: 100%;
+        max-width: inherit;
+        position: fixed;
+        background-color: transparent;
+        z-index: 2;
+    }
+/* --------------header 1----------------- */
+.fhead{
+  background-color: var(--first_color--);
+   width: 100%;
+   display: flex;
+   position: relative;
+   
+   /* z-index: 2; */
+
+}
+.fhead header{
+    padding-left: 15px;
+    padding-right:15px;
+    width:600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* contact */
+.contact{
+    display: flex;
+}
+.contact h3{
+    color: var(--last_color--); 
+}
+.contact span{
+    margin-right: 10px;
+    color: var(--second_color--);
+}
+/* icons */
+
+.icons a i{
+   margin-left: 10px;
+   color: var(--second_color--);
+   
+}
+.icons a i:hover{
+    scale: 1.4;
+}
+
+/* screens */
+
+
+@media (min-width:768px) {
+    .fhead header{
+        width: 750px;
+    }
+}
+@media (min-width:992px) {
+    .fhead header{
+        width: 970px;
+    }
+}
+@media (min-width:1200px) {
+    .fhead header{
+        width: 1170px;
+    }
+}
+/* second header */
+
+/* header */
+.shead{
+    
+    width: 100%;
+    display: flex;
+    position: relative
+    ;
+    /* position: fixed;
+    max-width: inherit;
+    z-index: 2; */
+   
+ }
+ .shead header{
+    padding-left: 15px;
+    padding-right:15px;
+   background-color: var(--last_color--);
+    width: 375px;
+     margin-left: auto;
+     margin-right: auto;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+/* navigate */
+.nav a{
+    text-decoration: none;
+    color: var(--first_color--);
+    text-transform: capitalize;
+    font-size: 20px;
+    
+}
+.nav{
+    display: flex;
+    gap: 20px;
+}
+header h1{
+    text-transform: capitalize;
+    font-size: 60px;
+    cursor: pointer;
+}
+.nav a:hover{
+    color: var(--second_color--);
+}
+
+/* screens */
+@media (min-width:768px) {
+    .shead header{
+        width: 750px;
+    }
+}
+@media (min-width:992px) {
+    .shead header{
+        width: 970px;
+    }
+}
+@media (min-width:1200px) {
+    .shead header{
+        width: 1170px;
+    }
+} 
+/* image */
+
+.fhero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color:var(--last_color--);
+    position: relative;
+     z-index: 1; 
+    padding-top: 120px;
+    
+}
+.fhero .hero{
+    width: 90%;
+    height: 80vh;
+    background-color:rgba(82, 212, 184, 0.215);
+    display: flex;
+    flex-direction: column;
+    
+    
+
+}
+.hero span{
+    color: var(--second_color--);
+}
+.hero img{
+    width: 90%;
+    max-width: 100%;
+    height: 80vh;
+    z-index: -1;
+}
+/* screens */
+@media (min-width:768px) {
+    .hero img{
+        width: 750px;
+    }
+}
+@media (min-width:992px) {
+    .hero img{
+        width: 970px;
+    }
+}
+@media (min-width:1200px) {
+    .hero img{
+        width: 1170px;
+    }
+} 
+/* text */
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 0px;
+    position: relative;
+    bottom: 350px;
+    
+    
+    
+}
+.text h1{
+    font-size: 60px;
+    text-transform: capitalize;
+    color: var(--last_color--);
+}
+.text h2{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: var(--last_color--);
+}
+/* button */
+.text input{
+ padding: 12px 20px;
+ border: solid transparent ;
+ color: var(--last_color--);
+ background-color: var(--second_color--);
+ border-radius: 12px;
+ text-transform: capitalize;
+ font-weight: bold;
+ font-size: 20px;
+ 
+}
+ input:hover{
+    background-color: var(--first_color--);
+    cursor: pointer;
+}
+/* PRElist of work */
+ .fhero .prel{
+    width: 97%;
+    background-color: transparent;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    
+
+   
+}
+.prel .numbers{
+    z-index: -1;
+}
+.one,.two,.three{
+   
+   font-size: 120px;
+   font-weight: bold;
+   color: rgba(128, 128, 128, 0.158);
+   
+  
+
+}
+.two{
+    margin-left: 260px;
+}
+.three{
+    margin-left: 260px;
+}
+.prel .list{
+    position:relative;
+    position: relative;
+    margin-left: 5%;
+   display: flex;
+   bottom: 100px;
+}
+/* List of work */
+.list h1{
+    color: var(--second_color--);
+}
+.list p{
+    color:rgb(57, 57, 57) ;
+    line-height: 1.8;
+}
+.list ul li{
+    color: rgb(57, 57, 57);
+    width: 45%;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+    margin-bottom:30px ;
+}
+.list ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-bottom: 40px;
+    flex-direction: column;
+}
+.list ul li i{
+    color: var(--second_color--);
+}
+/* my work  */
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.work{
+    align-items: center;
+}
+.work h1{
+    color: var(--first_color--);
+    font-size: 60px;
+    text-align: center;
+}
+.work p{
+    color: var(--first_color--);
+    font-size: 20px;
+    line-height: 1.8;
+}
+/* examples */
+.exa{
+    width:1200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.exa div{
+    cursor: pointer;
+   width:28%;
+   height: 60vh;
+   background-color: var(--second_color--);
+
+}
+.exa div h1{
+    margin-top: 50%;
+  color: var(--last_color--);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   
+
+}
+
+.exadeux{
+    width:1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+.exadeux div{
+    cursor: pointer; 
+    width:28%;
+    height: 60vh;
+    background-color: var(--second_color--);
+ 
+ }
+ .exadeux div h1{
+    margin-top: 50%;
+    color: var(--last_color--);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+  
+  }
+  
+  .exadeux div:hover{
+    background-color: var(--first_color--);
+    color: var(--last_color--);
+  }
+  .exa div:hover{
+    background-color: var(--first_color--);
+    color: var(--last_color--);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
